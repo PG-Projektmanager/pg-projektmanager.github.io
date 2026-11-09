@@ -1,0 +1,68 @@
+:root {
+  color-scheme: light;
+  --ink: #172a3b;
+  --muted: #4e6070;
+  --paper: #fff;
+  --background: #f5f7f9;
+  --line: #d7e0e7;
+  --accent: #145574;
+  --soft: #eaf3f7;
+  --draft-bg: #fff3d1;
+  --draft-ink: #57400b;
+}
+* { box-sizing: border-box; }
+html { font-size: 100%; scroll-padding-top: 1rem; }
+body { margin: 0; background: var(--background); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.65; overflow-wrap: anywhere; }
+.container { width: min(100% - 3rem, 70rem); margin-inline: auto; }
+.draft { padding: .75rem 0; background: var(--draft-bg); color: var(--draft-ink); border-bottom: 1px solid #e2ca8b; font-size: .95rem; }
+.draft strong { font-weight: 700; }
+.site-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.25rem 2rem; padding-block: 1.6rem; border-bottom: 1px solid var(--line); }
+.brand { display: block; text-decoration: none; color: var(--ink); font-size: 1.2rem; font-weight: 750; letter-spacing: -.025em; }
+.brand span { display: block; margin-top: .15rem; color: var(--muted); font-size: .8rem; font-weight: 450; letter-spacing: .02em; }
+nav { display: flex; flex-wrap: wrap; gap: .35rem 1.2rem; align-items: center; }
+nav a { display: inline-flex; align-items: center; min-height: 2.75rem; text-underline-offset: .3em; font-size: .95rem; }
+nav a[aria-current="page"] { font-weight: 700; text-decoration-thickness: .15em; }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: .15em; }
+a:focus-visible { outline: 3px solid #126991; outline-offset: 4px; border-radius: 2px; }
+.skip-link { position: absolute; left: 1rem; top: -6rem; z-index: 2; padding: .8rem 1rem; background: var(--paper); border: 2px solid var(--accent); }
+.skip-link:focus { top: .6rem; }
+main.container { max-width: 53rem; padding-top: 2.75rem; padding-bottom: 3rem; }
+main:focus { outline: none; }
+.intro { padding-block: .5rem 1.6rem; }
+.eyebrow { margin: 0 0 .9rem; color: var(--accent); font-size: .82rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+h1, h2 { line-height: 1.25; letter-spacing: -.025em; text-wrap: balance; }
+h1 { margin: 0 0 1.25rem; max-width: 24ch; font-size: clamp(2rem, 4vw, 3.15rem); font-weight: 720; }
+.document h1 { max-width: none; }
+h2 { margin: 0 0 .9rem; font-size: clamp(1.3rem, 2.5vw, 1.65rem); font-weight: 690; }
+p { margin: 0 0 1rem; }
+.lead { max-width: 68ch; font-size: clamp(1.07rem, 2vw, 1.2rem); color: var(--muted); }
+section { margin-top: 2.5rem; }
+section:first-child { margin-top: 0; }
+section > :last-child { margin-bottom: 0; }
+.notice { padding: 1.65rem; border: 1px solid #b9d2df; border-left: 4px solid var(--accent); border-radius: .35rem; background: var(--soft); }
+.text-link { display: inline-block; padding-block: .55rem; font-weight: 650; }
+ul, ol { margin: .6rem 0 1.2rem; padding-left: 1.4rem; }
+li { margin-block: .5rem; padding-left: .25rem; }
+.pending { display: inline-block; padding: .15rem .4rem; border: 1px dashed #98752b; border-radius: .2rem; background: #fff7e1; color: var(--draft-ink); font-size: .95em; }
+.open-item { padding: 1rem 1.15rem; border-left: 3px solid #98752b; background: #fff7e1; }
+.muted { color: var(--muted); font-size: .93rem; }
+.site-footer { padding-block: 1.6rem 2rem; border-top: 1px solid var(--line); font-size: .95rem; }
+.site-footer p { margin-bottom: .4rem; }
+.site-footer nav { margin-bottom: .7rem; }
+@media (max-width: 42rem) {
+  .container { width: min(100% - 2rem, 70rem); }
+  .site-header { align-items: flex-start; padding-block: 1.2rem; }
+  .site-header nav { width: 100%; gap: .2rem 1rem; }
+  main.container { padding-top: 2rem; }
+  .notice { padding: 1.25rem; }
+  section { margin-top: 2rem; }
+}
+@media print {
+  body { background: white; font-size: 10pt; }
+  .container { width: 100%; }
+  .site-header nav, .site-footer nav, .skip-link { display: none; }
+  h1 { font-size: 24pt; }
+  h2 { break-after: avoid; }
+  .notice, .open-item { break-inside: avoid; }
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="description" content="Informationsseite für HomeServer-Drive, ein privates Werkzeug zum Dateiabgleich mit dem eigenen Google Drive.">
+  <title>HomeServer-Drive · Privater Dateiabgleich</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+  <header class="container site-header">
+    <a class="brand" href="index.html">HomeServer-Drive<span>Privater Dateiabgleich</span></a>
+    <nav aria-label="Hauptnavigation"><a href="index.html" aria-current="page">Übersicht</a><a href="datenschutz.html">Datenschutz</a></nav>
+  </header>
+  <main id="inhalt" class="container" tabindex="-1">
+    <section class="intro" aria-labelledby="titel">
+      <p class="eyebrow">Information zur OAuth-Anwendung</p>
+      <h1 id="titel">Eigene Dateien zwischen Homeserver und Google Drive übertragen.</h1>
+      <p class="lead">HomeServer-Drive ist ein privates Werkzeug für den Abgleich ausgewählter lokaler Dateien mit dem eigenen Google-Konto. Die Verbindung wird vom Kontoinhaber bewusst auf der Google-Berechtigungsseite erlaubt.</p>
+      <a class="text-link" href="datenschutz.html">Datenzugriff und Datenschutz im Detail <span aria-hidden="true">→</span></a>
+    </section>
+    <section aria-labelledby="zweck">
+      <h2 id="zweck">Wozu die Verbindung dient</h2>
+      <p>Der lokale Dienst verwendet die Google Drive API, um ausgewählte Dateien nach Google Drive zu übertragen. Ein gesonderter Eingangsbereich dient dazu, Markdown-Auftragsdateien aus Drive lokal bereitzustellen. Die lokalen Arbeitsdateien bleiben für den normalen Arbeitsablauf führend.</p>
+      <p>Übertragen werden ausschliesslich die vom Kontoinhaber freigegebenen Dateien. Künstliche Testdateien dienen der Funktions- und Sicherheitsprüfung vor der Aktivierung oder Änderung des Dateiabgleichs.</p>
+      <p>Ein importierter Auftrag ist eine Datei, keine Ausführungsfreigabe. Der Import startet keine Befehle und keine automatische Bearbeitung. Die hier beschriebene Anwendung führt keine KI-Auswertung aus.</p>
+    </section>
+    <section class="notice" aria-labelledby="zugriff">
+      <h2 id="zugriff">Umfang der Google-Berechtigung</h2>
+      <p>Die vorgesehene OAuth-Berechtigung erlaubt technisch das Anzeigen und Verwalten aller Dateien im autorisierten Google Drive. Dazu können Lesen, Erstellen, Ändern und Löschen gehören.</p>
+      <p><strong>Die Auswahl bestimmter Austauschordner ist eine Begrenzung im Programm. Sie verkleinert die von Google erteilte Kontoberechtigung nicht.</strong> Welche Ordner verwendet werden, wird separat in der privaten Anwendung festgelegt.</p>
+    </section>
+    <section aria-labelledby="ablauf">
+      <h2 id="ablauf">Bewusste Autorisierung, kontrollierter Dateiabgleich</h2>
+      <ol><li>Der Kontoinhaber prüft die angeforderte Berechtigung und bestätigt sie bei Google.</li><li>Der Dienst verarbeitet die festgelegten Dateien und Übertragungsmetadaten auf dem eigenen Server.</li><li>Die Berechtigung kann im Google-Konto wieder entzogen werden.</li></ol>
+      <p>Diese Website bietet keine Registrierung oder Anmeldung. Sie fragt weder Google-Passwörter noch OAuth-Zugangsdaten ab.</p>
+      <p><a href="https://myaccount.google.com/connections" rel="noreferrer noopener">Verbindungen zu Drittanbieter-Apps im Google-Konto verwalten</a></p>
+    </section>
+    <section aria-labelledby="betreiber">
+      <h2 id="betreiber">Kontakt</h2>
+      <p>HomeServer-Drive Support</p>
+      <p>Kontakt: <a href="mailto:homeserver-drive-support@googlegroups.com">homeserver-drive-support@googlegroups.com</a></p>
+    </section>
+  </main>
+  <footer class="container site-footer"><p>HomeServer-Drive · Privates Werkzeug</p><nav aria-label="Weitere Informationen"><a href="datenschutz.html">Datenschutz</a></nav></footer>
+</body>
+</html>

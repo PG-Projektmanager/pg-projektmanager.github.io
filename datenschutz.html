@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="description" content="Datenschutzhinweise für die private OAuth-Anwendung HomeServer-Drive.">
+  <title>Datenschutz · HomeServer-Drive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+  <header class="container site-header">
+    <a class="brand" href="index.html">HomeServer-Drive<span>Privater Dateiabgleich</span></a>
+    <nav aria-label="Hauptnavigation"><a href="index.html">Übersicht</a><a href="datenschutz.html" aria-current="page">Datenschutz</a></nav>
+  </header>
+  <main id="inhalt" class="container document" tabindex="-1">
+    <p class="eyebrow">Informationen zur Datenverarbeitung</p>
+    <h1>Datenschutz</h1>
+    <p class="lead">Diese Hinweise beschreiben den privaten Dateiabgleich von HomeServer-Drive. Übertragen werden ausschliesslich die vom Kontoinhaber freigegebenen Dateien. Künstliche Testdateien dienen der Funktions- und Sicherheitsprüfung.</p>
+    <section aria-labelledby="verantwortlich">
+      <h2 id="verantwortlich">Kontakt</h2>
+      <p>HomeServer-Drive Support</p>
+      <p>Kontakt: <a href="mailto:homeserver-drive-support@googlegroups.com">homeserver-drive-support@googlegroups.com</a></p>
+    </section>
+    <section aria-labelledby="daten">
+      <h2 id="daten">Welche Daten verarbeitet werden</h2>
+      <p>Die Verbindung dient dem Abgleich ausgewählter lokaler Dateien mit dem eigenen Google Drive und dem Import von Markdown-Auftragsdateien. Dabei verarbeitet die Anwendung:</p>
+      <ul>
+        <li>Dateiinhalte, Datei- und Ordnernamen sowie die für die Zuordnung benötigten Drive-Dateikennungen;</li>
+        <li>Dateigrössen, Änderungszeiten und Prüfsummen für Änderungserkennung und Übertragungsprüfung;</li>
+        <li>Zuordnungsdaten und Revisionen für den kontrollierten Dateiimport;</li>
+        <li>technische Übertragungs-, Konflikt- und Fehlerzustände für Wiederanlauf und Nachvollziehbarkeit;</li>
+        <li>OAuth-Zugangsdaten für den erlaubten Zugriff auf das Google-Konto, insbesondere Zugriffs- und gegebenenfalls Refresh-Token.</li>
+      </ul>
+      <p>OAuth-Zugangsdaten gehören ausschliesslich in die geschützte Serverlaufzeit. Sie werden von dieser Website nicht abgefragt, gespeichert oder ausgeliefert und gehören nicht in Projektdateien oder öffentliche Repositories.</p>
+    </section>
+    <section class="notice" aria-labelledby="berechtigung">
+      <h2 id="berechtigung">Breite Berechtigung, begrenzte Programmauswahl</h2>
+      <p>Die vorgesehene vollständige Drive-Berechtigung erlaubt technisch den Zugriff auf alle Dateien des autorisierten Google Drive und deren Verwaltung. Die Nutzung ausgewählter Austauschordner wird im Programm begrenzt; sie ist keine von Google erzwungene Beschränkung der OAuth-Berechtigung.</p>
+      <p>Die Autorisierung erfolgt bewusst durch den Kontoinhaber bei Google. Auf dieser Website gibt es keine Google-Anmeldung und keine Eingabe von Passwörtern oder Token.</p>
+    </section>
+    <section aria-labelledby="verwendung">
+      <h2 id="verwendung">Zweck, Speicherung und Übertragung</h2>
+      <p>Dateiinhalte und Metadaten werden auf dem eigenen Server für den festgelegten Dateiabgleich verarbeitet. Vorgesehene Cloudkopien werden im ausgewählten Google Drive desselben Kontoinhabers gespeichert. Technische Register dokumentieren geprüfte Übertragungen und verhindern doppelte Auftragsimporte.</p>
+      <p>HomeServer-Drive wird nicht für Werbung oder den Verkauf von Daten betrieben. Die Anwendung sieht keine Weitergabe von Dateiinhalten an andere Dienste ausser dem gewählten Google Drive vor. Für die Verarbeitung durch Google gelten dessen <a href="https://policies.google.com/privacy" rel="noreferrer noopener">Datenschutzhinweise</a>.</p>
+      <p>Die Anwendung führt keine KI-Auswertung aus und verwendet die übertragenen Daten nicht zum Training von KI-Modellen. Ein Dateiimport startet keine Befehle und keine automatische Auftragsbearbeitung.</p>
+    </section>
+    <section aria-labelledby="supportdaten">
+      <h2 id="supportdaten">Kontakt über die Supportadresse</h2>
+      <p>Die Supportadresse wird als Google-Gruppe bereitgestellt. Wenn Sie dorthin schreiben, werden Ihre Absenderadresse, der Nachrichteninhalt und gegebenenfalls Anhänge von Google Groups und den zuständigen Supportbetreuern für die Bearbeitung Ihrer Anfrage verarbeitet. Ein solcher Kontakt ist nicht anonym.</p>
+      <p>Supportnachrichten bleiben erhalten, solange sie zur Bearbeitung und angemessenen Nachverfolgung der Anfrage benötigt werden. Eine feste automatische Löschfrist wird hier nicht zugesagt. Löschanliegen können an dieselbe Supportadresse gerichtet werden.</p>
+      <p>Senden Sie keine Passwörter, Zugangstoken oder vertraulichen Dateiinhalte. Eine Nachricht erteilt der Anwendung keinen zusätzlichen Drive-Zugriff. Für Google Groups gelten die <a href="https://policies.google.com/privacy" rel="noreferrer noopener">Datenschutzhinweise von Google</a>.</p>
+    </section>
+    <section aria-labelledby="schutz">
+      <h2 id="schutz">Schutz gespeicherter Zugangsdaten</h2>
+      <p>Serverzugriff und Zugriff auf OAuth-Zugangsdaten müssen auf die dafür vorgesehenen Berechtigten begrenzt sein.</p>
+      <p>OAuth-Zugangsdaten werden auf dem eigenen Server verschlüsselt gespeichert. Der Zugriff auf diese Daten und die benötigten Entschlüsselungsdaten ist auf die vorgesehenen Dienstprozesse und die berechtigte Administration beschränkt.</p>
+    </section>
+    <section aria-labelledby="aufbewahrung">
+      <h2 id="aufbewahrung">Aufbewahrung und Löschung</h2>
+      <p>Arbeitsdateien und deren Cloudkopien bleiben erhalten, solange sie für den privaten Arbeitsablauf gebraucht werden. Ein Widerruf der Google-Berechtigung löscht bereits gespeicherte lokale Dateien, Drive-Kopien oder Konflikthistorien nicht automatisch.</p>
+      <p>Konflikt- und Versionshistorien dienen der bewussten Wiederherstellung und bleiben bis zu einer gezielten Bereinigung erhalten. Technische Register und Protokolle werden nach ihrem Betriebs- und Nachvollziehbarkeitszweck geprüft und bereinigt. Dafür wird hier keine ungeprüfte feste Aufbewahrungsdauer zugesagt.</p>
+      <p>Bei dauerhafter Stilllegung werden nicht mehr benötigte OAuth-Zugangsdaten entfernt. Vor einer Löschung von Dateien oder Historien ist zu prüfen, welche Arbeits- oder Wiederherstellungskopien noch benötigt werden. Fragen zur Speicherung und Löschanliegen können an den oben angegebenen Support gerichtet werden.</p>
+    </section>
+    <section aria-labelledby="widerruf">
+      <h2 id="widerruf">Berechtigung widerrufen</h2>
+      <p>Der Kontoinhaber kann die Verbindung in seinem Google-Konto entfernen. Nach wirksamem Entzug kann die Anwendung keine weiteren erlaubten Drive-Zugriffe mit dieser Verbindung durchführen. Ein erneuter Zugriff benötigt eine gültige Autorisierung.</p>
+      <p><a href="https://myaccount.google.com/connections" rel="noreferrer noopener">Verbindungen zu Drittanbieter-Apps im Google-Konto verwalten</a></p>
+      <p>Bereits übertragene Dateien werden separat im eigenen Drive beziehungsweise auf dem eigenen Server verwaltet.</p>
+    </section>
+    <section aria-labelledby="website">
+      <h2 id="website">Besuch dieser Informationswebsite</h2>
+      <p>Die statischen Seiten enthalten keine von uns eingebauten Analysewerkzeuge, Formulare, Skripte oder Cookies. Es werden keine OAuth-Zugangsdaten über die Seiten verarbeitet.</p>
+      <p>Bei einer Bereitstellung dieser Informationswebsite über GitHub Pages gilt: GitHub verarbeitet beim Abruf technische Verbindungsdaten und protokolliert Besucher-IP-Adressen zu Sicherheitszwecken. Dafür gelten die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer noopener">GitHub-Datenschutzhinweise</a>.</p>
+      <p>Beim Öffnen externer Links gelten die Bedingungen und Datenschutzhinweise des jeweiligen Anbieters.</p>
+    </section>
+  </main>
+  <footer class="container site-footer"><p>HomeServer-Drive · Privates Werkzeug</p><nav aria-label="Weitere Informationen"><a href="index.html">Übersicht</a></nav></footer>
+</body>
+</html>
